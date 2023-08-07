@@ -1,0 +1,49 @@
+#toggleChkLabel span{
+    transition-duration: 0.5s;
+    background-color: black;
+    height: 10px;
+    width: 75px;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    position:fixed;
+    z-index:10;
+}
+#toggleChkLabel span:nth-child(1){
+    top:10px;
+}
+#toggleChkLabel span:nth-child(2){
+    top:30px;
+}
+#toggleChkLabel span:nth-child(3){
+    top:50px;
+}
+#toggleChk{
+    display: none
+}
+#toggleChk:checked+#toggleChkLabel span:nth-child(1){
+    transition-duration: 0.5s;
+    transform:rotate(45deg) translateY(12px)  translateX(38px);
+}
+#toggleChk:checked+#toggleChkLabel span:nth-child(2){
+    position: absolute;
+    left:-100px;
+}
+#toggleChk:checked+#toggleChkLabel span:nth-child(3){
+    transition-duration: 0.5s;
+    transform:rotate(-45deg) translateY(10px) translateX(15px);
+}
+#sideBar{
+    height: 100vw;
+    width: 100px;
+    background-color: red;
+    transition: all 1s;
+    position: fixed;
+    left:-100px;
+    top:0;
+    z-index:5;
+}
+
+#toggleChk:checked + #toggleChkLabel + #sideBar{
+    left:0;
+}

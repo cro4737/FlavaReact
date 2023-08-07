@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            transition-duration: 0.5s;
+            background-color: black;
+            height: 10px;
+            width: 75px;
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+        #toggleChk:checked+label span:nth-child(1){
+            transition-duration: 0.5s;
+            transform:rotate(45deg) translateY(12px)  translateX(38px);
+        }
+        #toggleChk:checked+label span:nth-child(2){
+            position: absolute;
+            left:-100px;
+        }
+        #toggleChk:checked+label span:nth-child(3){
+            transition-duration: 0.5s;
+            transform:rotate(-45deg) translateY(30px);
+        }
+        #ddd{
+            height: 100vh;
+            width: 100px;
+            background-color: red;
+            transition: all 1s;
+            position: fixed;
+            left:0;
+        }
+
+        #toggleChk:checked + label + #ddd{
+            left:100px;
+        }
+    </style>
+    <script>
+        function toggleAlert(){
+            alert(document.getElementById("toggleChk").checked)
+        }
+    </script>
+</head>
+<body>
+<input id="toggleChk" name="toggleChk" type="checkbox" style="display: none" >
+<label for="toggleChk">
+    <span></span>
+    <span></span>
+    <span></span>
+
+
+</label>
+<div id="ddd">
+</div>
+</body>
+</html>

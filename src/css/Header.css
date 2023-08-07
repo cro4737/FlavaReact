@@ -1,0 +1,15 @@
+#grid{
+    display:grid;
+    grid-template-columns: 1fr 9fr 1fr 1fr;
+}
+
+#profileImg{
+    width:100px;
+    height:100px;
+    border-radius:100%
+}
+
+.routeLinkGroup{
+    text-decoration: none;
+    color:white;
+}

@@ -1,0 +1,32 @@
+/*input{*/
+/*    position:relative;*/
+/*}*/
+
+/*input[type="date"]::-webkit-calendar-picker-indicator{*/
+/*    background-position:right;*/
+/*    background-size:0;*/
+/*    cursor:pointer;*/
+/*    bottom:0;*/
+/*    top:0;*/
+/*    right:0;*/
+/*    left:0;*/
+/*    width:auto;*/
+/*}*/
+
+
+#closeBtn{
+    color:black;
+}
+#saveBtn{
+    color:red;
+}
+
+#closeBtn svg{
+    height:50px;
+    width:50px;
+}
+#saveBtn svg{
+    height:50px;
+    width:50px;
+}
+

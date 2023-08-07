@@ -1,0 +1,14 @@
+:root {
+    --imgSize:50px;
+}
+
+.BtnGroup {
+    border-radius:100%;
+    height:75px;
+    width:75px;
+    color:currentColor;
+}
+.BtnGroup svg {
+    height: var(--imgSize);
+    width: var(--imgSize);
+}
