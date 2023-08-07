@@ -28,7 +28,7 @@ function Movie(){
             alert("no query");
             return;
         } else {
-           const authKey = "GQ9Y4N7KM87XQIOURGGM"
+           const authKey = ""
 
            let qs = "https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&query=" + encodeURIComponent(query) + "&ServiceKey=" + authKey
            console.log(qs)
