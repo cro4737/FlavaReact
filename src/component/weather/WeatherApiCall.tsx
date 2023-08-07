@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/esm/Form';
 
 function WeatherApiCall(){
     const host= "https://api.openweathermap.org/data/2.5/weather"
-    const key="e8eb83b7442bde62e1eaa3433f1bc069"
+    const key=""
 
     const [weather,setWeather]=React.useState(host)
 
